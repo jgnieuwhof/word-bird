@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { add, Duration, isAfter, parseISO } from "date-fns";
 
 const localStorageGet = <T>(key: string): T | undefined => {
   const item = window.localStorage.getItem(key);
@@ -39,4 +40,23 @@ export const useLocalStorage = <T>(
   };
 
   return [storedValue, setValue];
+};
+
+export const useLocalStorageWithExpiry = <T>(
+  key: string,
+  valueFn: () => T,
+  duration: Duration
+): [T, (value: T) => void] => {
+  const [expiry, setExpiry] = useLocalStorage(
+    `${key}.expiry`,
+    add(Date.now(), duration).toISOString()
+  );
+  const [value, setValue] = useLocalStorage(key, valueFn());
+
+  if (isAfter(Date.now(), parseISO(expiry))) {
+    setExpiry(add(Date.now(), duration).toISOString());
+    setValue(valueFn());
+  }
+
+  return [value, setValue];
 };
