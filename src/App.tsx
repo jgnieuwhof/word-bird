@@ -1,26 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { FC } from "react";
+import { Layout } from "./components/Layout";
+import { useWords } from "./hooks/useWords";
 
-const App: React.FC = () => {
+export const App: FC = () => {
+  const words = useWords({ number: 3 });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <pre>{JSON.stringify(words, null, 2)}</pre>
+    </Layout>
   );
-}
-
-export default App;
+};
