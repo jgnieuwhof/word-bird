@@ -7,10 +7,6 @@ import wordBird from "../img/word-bird.png";
 
 const LayoutContainer = styled(Flex)`
   height: 100vh;
-  background-color: #4e276b;
-  background-image: url(${wordBird});
-  background-position: center;
-  background-size: 7rem;
   padding: 1rem;
 `;
 
@@ -25,6 +21,10 @@ export const Layout: FC = ({ children }) => (
             "Helvetica Neue", sans-serif;
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
+          background-color: #4e276b;
+          background-image: url(${wordBird});
+          background-position: center;
+          background-size: 7rem;
         }
 
         code {
