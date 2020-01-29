@@ -11,6 +11,7 @@ const LayoutContainer = styled(Flex)`
   background-image: url(${wordBird});
   background-position: center;
   background-size: 7rem;
+  padding: 1rem;
 `;
 
 export const Layout: FC = ({ children }) => (
@@ -29,6 +30,10 @@ export const Layout: FC = ({ children }) => (
         code {
           font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
             monospace;
+        }
+
+        * {
+          box-sizing: border-box;
         }
       `}
     />
