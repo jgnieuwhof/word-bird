@@ -12,10 +12,20 @@ const WordsContainer = styled(Box)`
 const WordContainer = styled(Box)`
   text-align: center;
   margin-top: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 2px solid black;
 `;
 
 const Word = styled(Box)`
+  word-break: break-word;
   font-weight: bold;
+  font-size: 1.2rem;
+`;
+
+const Definition = styled(Box)`
+  word-break: break-word;
 `;
 
 export const Words: FC = () => {
@@ -26,7 +36,7 @@ export const Words: FC = () => {
       {words.map(({ word, definition }) => (
         <WordContainer key={word}>
           <Word>{word}</Word>
-          <Box>{definition}</Box>
+          <Definition>{definition}</Definition>
         </WordContainer>
       ))}
     </WordsContainer>

@@ -3,8 +3,14 @@ import { Global, css } from "@emotion/core";
 import styled from "@emotion/styled";
 import { Flex } from "rebass";
 
+import wordBird from "../img/word-bird.png";
+
 const LayoutContainer = styled(Flex)`
   height: 100vh;
+  background-color: #4e276b;
+  background-image: url(${wordBird});
+  background-position: center;
+  background-size: 7rem;
 `;
 
 export const Layout: FC = ({ children }) => (
