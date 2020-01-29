@@ -1,13 +1,13 @@
 import React, { FC } from "react";
 import { Global, css } from "@emotion/core";
 import styled from "@emotion/styled";
-import { Flex } from "rebass";
+import Div100vh from "react-div-100vh";
 
 import wordBird from "../img/word-bird.png";
 
-const LayoutContainer = styled(Flex)`
-  height: 100vh;
+const LayoutContainer = styled(Div100vh)`
   padding: 1rem;
+  display: flex;
 `;
 
 export const Layout: FC = ({ children }) => (

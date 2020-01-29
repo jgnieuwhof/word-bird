@@ -11,7 +11,7 @@ const WordsContainer = styled(Box)`
 
 const WordContainer = styled(Box)`
   text-align: center;
-  margin-top: 1rem;
+  margin: 1rem 0;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 1rem;
   border-radius: 1rem;
