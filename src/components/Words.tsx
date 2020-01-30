@@ -15,29 +15,36 @@ const WordContainer = styled(Box)`
   text-align: center;
   margin: 1rem 0;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 1rem;
-  border: 2px solid black;
 `;
 
 const ClickableWordContainer = styled(WordContainer)`
   cursor: pointer;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
 `;
 
-const Word = styled(Box)`
+const Content = styled(Box)`
+  margin: 0.5rem auto;
+`;
+
+const Word = styled(Content)`
   word-break: break-word;
   font-weight: bold;
   font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 `;
 
-const Definition = styled(Box)`
+const Definition = styled(Content)`
   word-break: break-word;
 `;
 
 const ResetButton = styled(Button)`
   cursor: pointer;
   color: black;
-  border: 2px solid black;
+  background-color: #c4c4ff;
   border-radius: 0.5rem;
 `;
 
