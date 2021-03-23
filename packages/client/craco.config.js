@@ -5,8 +5,8 @@ module.exports = {
     {
       plugin: CracoRawLoaderPlugin,
       options: {
-        test: /\.csv$/
-      }
-    }
-  ]
+        test: /\.csv$/,
+      },
+    },
+  ],
 };
