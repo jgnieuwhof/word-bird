@@ -1,6 +1,5 @@
-
 const start = () => {
-  console.log("hey")
+  console.log("hey");
 };
 
 start();

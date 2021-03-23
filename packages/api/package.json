@@ -5,7 +5,5 @@
   "scripts": {
     "start": "babel-node src/index.ts",
     "problems": "tsc --noEmit"
-  },
-  "dependencies": {
   }
 }
