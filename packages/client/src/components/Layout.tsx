@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Global, css } from "@emotion/core";
+import { Global, css } from "@emotion/react";
 import styled from "@emotion/styled";
 import Div100vh from "react-div-100vh";
 

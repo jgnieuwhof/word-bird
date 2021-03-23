@@ -1,0 +1,62 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "lint": "eslint .",
+    "problems": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@emotion/core": "^11.0.0",
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.1.5",
+    "date-fns": "^2.19.0",
+    "papaparse": "^5.2.0",
+    "prettier": "^2.2.1",
+    "react": "^17.0.2",
+    "react-div-100vh": "^0.5.6",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "rebass": "^4.0.7"
+  },
+  "devDependencies": {
+    "@baristalabs/craco-raw-loader": "^1.2.0",
+    "@craco/craco": "^6.1.1",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^13.0.7",
+    "@types/jest": "^26.0.21",
+    "@types/papaparse": "^5.0.3",
+    "@types/react": "^17.0.3",
+    "@types/react-div-100vh": "^0.3.0",
+    "@types/react-dom": "^17.0.3",
+    "@types/rebass": "^4.0.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "react-app",
+      "plugin:prettier/recommended"
+    ]
+  },
+  "proxy": "http://localhost:8080",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "volta": {
+    "node": "14.16.0",
+    "yarn": "1.22.10"
+  }
+}

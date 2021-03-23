@@ -1,0 +1,11 @@
+{
+  "name": "api",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "babel-node src/index.ts",
+    "problems": "tsc --noEmit"
+  },
+  "dependencies": {
+  }
+}
