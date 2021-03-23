@@ -8,7 +8,7 @@
     "start:web": "yarn workspace client start",
     "start": "run-p start:*",
     "build": "ultra -r build",
-    "lint": "eslint",
+    "lint": "eslint .",
     "problems": "ultra -r problems"
   },
   "devDependencies": {
@@ -32,6 +32,13 @@
     "prettier": "2.2.1",
     "typescript": "4.2.3",
     "ultra-runner": "^3.10.5"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "react-app",
+      "plugin:prettier/recommended"
+    ]
   },
   "volta": {
     "node": "14.16.0",
