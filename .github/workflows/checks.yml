@@ -1,9 +1,8 @@
-name: Super-Linter
+name: Checks
 
 on:
   pull_request:
-    branches:
-      - master
+    branches: [master]
 
 jobs:
   lint:
