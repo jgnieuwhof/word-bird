@@ -5,6 +5,7 @@
     "packages/client"
   ],
   "scripts": {
+    "start:api": "yarn workspace api start",
     "start:web": "yarn workspace client start",
     "start": "run-p start:*",
     "build": "ultra -r build",
@@ -28,8 +29,10 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.18.0",
     "eslint-plugin-react-hooks": "4.2.0",
+    "nodemon": "2.0.7",
     "npm-run-all": "4.1.5",
     "prettier": "2.2.1",
+    "ts-node": "9.1.1",
     "typescript": "4.2.3",
     "ultra-runner": "^3.10.5"
   },
