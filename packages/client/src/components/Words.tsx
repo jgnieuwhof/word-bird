@@ -57,7 +57,7 @@ export const Words: FC = () => {
   const [currentWord, setCurrentWord] = useLocalStorage<
     CurrentWord | undefined
   >("word", undefined);
-  const words = useWords({ number: 3 });
+  const words = useWords({ number: 5 });
 
   return (
     <WordsContainer>
